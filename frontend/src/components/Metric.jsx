@@ -1,0 +1,9 @@
+export default function Metric({ label, value, hint }) {
+  return (
+    <div className="metric-card">
+      <span className="metric-label">{label}</span>
+      <strong className="metric-value">{value ?? '—'}</strong>
+      {hint && <span className="metric-hint">{hint}</span>}
+    </div>
+  )
+}
